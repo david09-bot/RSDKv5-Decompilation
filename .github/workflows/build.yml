@@ -1,7 +1,5 @@
-name: Build RSDKv5 + U
-
 on:
-workflow_dispatch:
+  workflow_dispatch:
   push:
     paths:
       - android/**
@@ -13,6 +11,7 @@ workflow_dispatch:
       - CMakeLists.txt
     branches:
       - master
+
 
 env:
   GENERAL_FLAGS: "-DRETRO_DISABLE_PLUS=ON -DCMAKE_BUILD_TYPE=Release"
